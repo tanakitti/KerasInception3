@@ -29,7 +29,7 @@ This code is used to train inceptionV3 and save model
 
 ```
 
-## File Structure
+## Command
 ``` bash
 
 python3 --train train --validation validation --epoch 50
