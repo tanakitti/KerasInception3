@@ -1,4 +1,4 @@
-# python3 --train train --validation validation --epoch 50
+# python3 --train train --validation *file path* --epoch 50
 
 import pandas as pd
 import numpy as np
