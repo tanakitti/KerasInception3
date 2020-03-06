@@ -1,4 +1,4 @@
-# python3 --train train --validation *file path* --epoch 50
+# python3 train.py --train train --validation validation --epoch 1
 
 import pandas as pd
 import numpy as np
@@ -21,7 +21,7 @@ ap.add_argument('-t', '--train', required=True,
 	help='path to the train image floder')
 ap.add_argument('-v', '--validation', required=True,
 	help='path to the validation image floder')
-ap.add_argument('-e', '--epoch', type=int, default=50
+ap.add_argument('-e', '--epoch', type=int, default=50,
 	help='number of epoches')
 
 args = vars(ap.parse_args())
