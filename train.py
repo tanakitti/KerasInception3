@@ -107,9 +107,9 @@ modelAcc = accuracy_score(y_test, y_pred)
 model.save('Inception3.'+str(modelAcc)+'.h5')
 
 # save model weight
-model.save_weights('Inception3.'+str(modelAcc)+'.h5')
+model.save_weights('Inception3.Weight.'+str(modelAcc)+'.h5')
 
 # save model layers
 model_yaml = model.to_yaml()
-with open('Inception3.'+str(modelAcc)+'.yaml', 'w') as yaml_file:
+with open('Inception3.Architecture.'+str(modelAcc)+'.yaml', 'w') as yaml_file:
     yaml_file.write(model_yaml)
